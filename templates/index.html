@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <div class="panel">
+        <h3 class="ml-2"> All My Notes</h3>
+        # create a for loop here to display each title and description for your notes posts
+        {% for post in posts %}
+        <div class="panel">
+            <div class="panel-body panel-notes">
+                <div class="note-title"> {{ post.id }} </div>
+                <p class="note-desc"> {{ post.contain }} </p>
+                <hr>
+            </div>
+        </div>
+        {% endfor %}
+</body>
+
+</html>
